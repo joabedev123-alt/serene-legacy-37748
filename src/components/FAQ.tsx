@@ -49,19 +49,19 @@ const FAQ = () => {
   };
 
   return (
-    <section id="faq" className="py-24 bg-background">
+    <section id="faq" className="py-12 sm:py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center max-w-3xl mx-auto mb-16"
+          className="text-center max-w-3xl mx-auto mb-8 sm:mb-12 md:mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl font-display font-bold text-foreground mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4 sm:mb-6">
             Perguntas Frequentes
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-sm sm:text-base md:text-lg text-muted-foreground px-4">
             Esclarecemos suas dúvidas sobre nossos serviços e processos.
           </p>
         </motion.div>
@@ -73,20 +73,20 @@ const FAQ = () => {
           transition={{ duration: 0.6 }}
           className="max-w-3xl mx-auto"
         >
-          <Accordion type="single" collapsible className="space-y-4">
+          <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
             {faqs.map((faq, index) => (
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="bg-card border border-border rounded-lg px-6"
+                className="bg-card border border-border rounded-lg px-4 sm:px-6"
               >
-                <AccordionTrigger className="text-left hover:no-underline">
-                  <span className="text-lg font-semibold text-foreground pr-4">
+                <AccordionTrigger className="text-left hover:no-underline py-4">
+                  <span className="text-sm sm:text-base md:text-lg font-semibold text-foreground pr-4">
                     {faq.question}
                   </span>
                 </AccordionTrigger>
                 <AccordionContent>
-                  <p className="text-muted-foreground leading-relaxed pt-2">
+                  <p className="text-xs sm:text-sm md:text-base text-muted-foreground leading-relaxed pt-2 pb-2">
                     {faq.answer}
                   </p>
                 </AccordionContent>
@@ -99,14 +99,14 @@ const FAQ = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="mt-12 text-center"
+            className="mt-8 sm:mt-10 md:mt-12 text-center"
           >
-            <p className="text-lg text-muted-foreground mb-6">
+            <p className="text-base sm:text-lg text-muted-foreground mb-4 sm:mb-6 px-4">
               Ainda tem dúvidas?
             </p>
             <Button
               onClick={handleWhatsAppContact}
-              className="bg-whatsapp hover:bg-whatsapp/90 text-whatsapp-foreground"
+              className="bg-whatsapp hover:bg-whatsapp/90 text-whatsapp-foreground text-sm sm:text-base"
             >
               <MessageCircle className="w-4 h-4 mr-2" />
               Converse conosco

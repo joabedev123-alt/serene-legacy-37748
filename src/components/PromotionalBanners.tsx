@@ -66,14 +66,14 @@ const PromotionalBanners = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-background">
+    <section className="py-12 sm:py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="grid md:grid-cols-3 gap-6 md:gap-8"
+          className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8"
         >
           {plans.map((plan, index) => (
             <motion.div
@@ -84,34 +84,36 @@ const PromotionalBanners = () => {
               transition={{ duration: 0.5, delay: 0.1 * (index + 1) }}
             >
               <Card className="h-full hover:shadow-lg transition-shadow flex flex-col">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-xl">
-                    {plan.icon === "emerald" ? (
-                      <Gem className="w-8 h-8 text-green-500" />
-                    ) : plan.icon === "diamond" ? (
-                      <Gem className="w-8 h-8 text-blue-500" />
-                    ) : (
-                      <span className="text-3xl">{plan.icon}</span>
-                    )}
-                    <span className="font-display">{plan.title}</span>
+                <CardHeader className="p-4 sm:p-6">
+                  <CardTitle className="flex items-start sm:items-center gap-2 text-base sm:text-lg md:text-xl flex-col sm:flex-row">
+                    <div className="flex-shrink-0">
+                      {plan.icon === "emerald" ? (
+                        <Gem className="w-6 h-6 sm:w-8 sm:h-8 text-green-500" />
+                      ) : plan.icon === "diamond" ? (
+                        <Gem className="w-6 h-6 sm:w-8 sm:h-8 text-blue-500" />
+                      ) : (
+                        <span className="text-2xl sm:text-3xl">{plan.icon}</span>
+                      )}
+                    </div>
+                    <span className="font-display text-left">{plan.title}</span>
                   </CardTitle>
-                  <CardDescription className="text-lg font-semibold text-primary mt-2">
+                  <CardDescription className="text-base sm:text-lg font-semibold text-primary mt-2">
                     💰 Apenas {plan.price} por mês
                   </CardDescription>
                 </CardHeader>
-                <CardContent className="flex-grow flex flex-col">
-                  <h3 className="font-semibold mb-3 text-foreground">Benefícios</h3>
-                  <ul className="space-y-2 mb-6 flex-grow">
+                <CardContent className="flex-grow flex flex-col p-4 sm:p-6">
+                  <h3 className="text-sm sm:text-base font-semibold mb-2 sm:mb-3 text-foreground">Benefícios</h3>
+                  <ul className="space-y-1.5 sm:space-y-2 mb-4 sm:mb-6 flex-grow">
                     {plan.benefits.map((benefit, benefitIndex) => (
-                      <li key={benefitIndex} className="text-sm text-muted-foreground flex items-start">
-                        <span className="mr-2 text-primary">•</span>
+                      <li key={benefitIndex} className="text-xs sm:text-sm text-muted-foreground flex items-start">
+                        <span className="mr-2 text-primary flex-shrink-0">•</span>
                         <span>{benefit}</span>
                       </li>
                     ))}
                   </ul>
                   <Button 
                     onClick={() => handleWhatsAppClick(plan.title)}
-                    className="w-full bg-green-600 hover:bg-green-700 text-white mt-auto"
+                    className="w-full bg-green-600 hover:bg-green-700 text-white mt-auto text-sm sm:text-base py-2 sm:py-3"
                   >
                     Contratar via WhatsApp
                   </Button>

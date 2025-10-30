@@ -40,8 +40,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-card/95 backdrop-blur-sm p-8 rounded-2xl shadow-2xl border border-border">
-      <h3 className="text-2xl font-display font-semibold text-foreground mb-6">
+    <div className="bg-card/95 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-2xl border border-border">
+      <h3 className="text-xl sm:text-2xl font-display font-semibold text-foreground mb-4 sm:mb-6">
         Entre em contato
       </h3>
       <form onSubmit={handleSubmit} className="space-y-4">

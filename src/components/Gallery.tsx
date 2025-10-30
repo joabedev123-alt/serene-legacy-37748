@@ -75,7 +75,7 @@ const Gallery = () => {
   };
 
   return (
-    <section className="py-24" style={{ backgroundColor: '#af8419' }}>
+    <section className="py-12 sm:py-16 md:py-24" style={{ backgroundColor: '#af8419' }}>
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <motion.div
@@ -83,12 +83,12 @@ const Gallery = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center max-w-3xl mx-auto mb-12 md:mb-16"
+          className="text-center max-w-3xl mx-auto mb-8 sm:mb-10 md:mb-12 lg:mb-16"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-4 md:mb-6 px-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-3 sm:mb-4 md:mb-6 px-4">
             Nossa Estrutura
           </h2>
-          <p className="text-base md:text-lg text-white/90 px-4">
+          <p className="text-sm sm:text-base md:text-lg text-white/90 px-4">
             Conheça nossa estrutura projetada para oferecer conforto e serenidade.
           </p>
         </motion.div>
@@ -101,13 +101,13 @@ const Gallery = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
-            className="relative rounded-2xl overflow-hidden shadow-2xl"
+            className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl"
           >
             {images[currentIndex].type === "image" ? (
               <img
                 src={images[currentIndex].src}
                 alt="Estrutura da Funerária D.C."
-                className="w-full h-[300px] md:h-[400px] object-cover"
+                className="w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[450px] object-cover"
               />
             ) : (
               <video
@@ -116,7 +116,7 @@ const Gallery = () => {
                 loop
                 muted
                 playsInline
-                className="w-full h-[300px] md:h-[400px] object-cover"
+                className="w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[450px] object-cover"
               />
             )}
           </motion.div>
@@ -124,28 +124,28 @@ const Gallery = () => {
           {/* Navigation Buttons */}
           <button
             onClick={prevSlide}
-            className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-white/90 hover:bg-white rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110"
+            className="absolute left-1 sm:left-2 md:left-4 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white/90 hover:bg-white rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110"
             aria-label="Imagem anterior"
           >
-            <ChevronLeft className="w-5 h-5 md:w-6 md:h-6 text-primary" />
+            <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-primary" />
           </button>
           <button
             onClick={nextSlide}
-            className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-white/90 hover:bg-white rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110"
+            className="absolute right-1 sm:right-2 md:right-4 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white/90 hover:bg-white rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110"
             aria-label="Próxima imagem"
           >
-            <ChevronRight className="w-5 h-5 md:w-6 md:h-6 text-primary" />
+            <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-primary" />
           </button>
 
           {/* Indicators */}
-          <div className="flex justify-center gap-2 mt-8">
+          <div className="flex justify-center gap-1.5 sm:gap-2 mt-4 sm:mt-6 md:mt-8">
             {images.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full transition-all duration-300 ${
                   index === currentIndex
-                    ? "bg-primary w-8"
+                    ? "bg-primary w-6 sm:w-8"
                     : "bg-muted hover:bg-primary/50"
                 }`}
               />
