@@ -3,7 +3,7 @@ import whatsappIcon from "@/assets/whatsapp-icon.webp";
 
 const WhatsAppButton = () => {
   const whatsappNumber = "5527999781195";
-  const whatsappMessage = encodeURIComponent("Olá! Gostaria de mais informações sobre os serviços da Funerária D.C.");
+  const whatsappMessage = encodeURIComponent("Olá! Gostaria de mais informações sobre os serviços da Funerária Descanso Em Cristo");
 
   return (
     <motion.a

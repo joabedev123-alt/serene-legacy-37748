@@ -11,6 +11,20 @@ import galleryFlowersYellow from "@/assets/gallery-flowers-yellow.jpg";
 import galleryVideo1 from "@/assets/gallery-video-1.mp4";
 import galleryVideo2 from "@/assets/gallery-video-2.mp4";
 import galleryVideo3 from "@/assets/gallery-video-3.mp4";
+import carouselImg1 from "@/assets/imagens do carossel/WhatsApp Image 2025-10-30 at 20.08.09 (1).jpeg";
+import carouselImg2 from "@/assets/imagens do carossel/WhatsApp Image 2025-10-30 at 20.08.09 (2).jpeg";
+import carouselImg3 from "@/assets/imagens do carossel/WhatsApp Image 2025-10-30 at 20.08.09.jpeg";
+import carouselImg4 from "@/assets/imagens do carossel/WhatsApp Image 2025-10-30 at 20.08.10.jpeg";
+import carouselImg5 from "@/assets/imagens do carossel/WhatsApp Image 2025-10-30 at 20.08.11.jpeg";
+import carouselImg6 from "@/assets/imagens do carossel/WhatsApp Image 2025-10-30 at 20.08.13.jpeg";
+import carouselImg7 from "@/assets/imagens do carossel/WhatsApp Image 2025-10-30 at 20.08.14.jpeg";
+import carouselImg8 from "@/assets/imagens do carossel/WhatsApp Image 2025-10-30 at 20.08.31 (1).jpeg";
+import carouselImg9 from "@/assets/imagens do carossel/WhatsApp Image 2025-10-30 at 20.08.31 (2).jpeg";
+import carouselImg10 from "@/assets/imagens do carossel/WhatsApp Image 2025-10-30 at 20.08.31.jpeg";
+import carouselImg11 from "@/assets/imagens do carossel/WhatsApp Image 2025-10-30 at 20.08.32 (1).jpeg";
+import carouselImg12 from "@/assets/imagens do carossel/WhatsApp Image 2025-10-30 at 20.08.32.jpeg";
+import carouselImg13 from "@/assets/imagens do carossel/WhatsApp Image 2025-10-30 at 20.08.38.jpeg";
+import carouselImg14 from "@/assets/imagens do carossel/WhatsApp Image 2025-10-30 at 20.08.39.jpeg";
 
 const images = [
   {
@@ -53,6 +67,62 @@ const images = [
     src: galleryVideo3,
     type: "video",
   },
+  {
+    src: carouselImg1,
+    type: "image",
+  },
+  {
+    src: carouselImg2,
+    type: "image",
+  },
+  {
+    src: carouselImg3,
+    type: "image",
+  },
+  {
+    src: carouselImg4,
+    type: "image",
+  },
+  {
+    src: carouselImg5,
+    type: "image",
+  },
+  {
+    src: carouselImg6,
+    type: "image",
+  },
+  {
+    src: carouselImg7,
+    type: "image",
+  },
+  {
+    src: carouselImg8,
+    type: "image",
+  },
+  {
+    src: carouselImg9,
+    type: "image",
+  },
+  {
+    src: carouselImg10,
+    type: "image",
+  },
+  {
+    src: carouselImg11,
+    type: "image",
+  },
+  {
+    src: carouselImg12,
+    type: "image",
+  },
+  {
+    src: carouselImg13,
+    type: "image",
+  },
+  {
+    src: carouselImg14,
+    type: "image",
+  },
 ];
 
 const Gallery = () => {
@@ -85,16 +155,16 @@ const Gallery = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-8 sm:mb-10 md:mb-12 lg:mb-16"
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-3 sm:mb-4 md:mb-6 px-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-3 sm:mb-4 md:mb-6 px-4">
             Nossa Estrutura
           </h2>
-          <p className="text-sm sm:text-base md:text-lg text-white/90 px-4">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white/90 px-4">
             Conheça nossa estrutura projetada para oferecer conforto e serenidade.
           </p>
         </motion.div>
 
         {/* Carousel */}
-        <div className="relative max-w-4xl mx-auto">
+        <div className="relative max-w-5xl mx-auto">
           <motion.div
             key={currentIndex}
             initial={{ opacity: 0 }}
@@ -106,8 +176,8 @@ const Gallery = () => {
             {images[currentIndex].type === "image" ? (
               <img
                 src={images[currentIndex].src}
-                alt="Estrutura da Funerária D.C."
-                className="w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[450px] object-cover"
+                alt="Estrutura da Funerária Descanso Em Cristo"
+                className="w-full h-[280px] sm:h-[350px] md:h-[450px] lg:h-[550px] xl:h-[650px] object-contain"
               />
             ) : (
               <video
@@ -116,7 +186,7 @@ const Gallery = () => {
                 loop
                 muted
                 playsInline
-                className="w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[450px] object-cover"
+                className="w-full h-[280px] sm:h-[350px] md:h-[450px] lg:h-[550px] xl:h-[650px] object-cover"
               />
             )}
           </motion.div>

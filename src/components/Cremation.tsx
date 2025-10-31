@@ -26,12 +26,12 @@ const Cremation = () => {
           </div>
 
           {/* Title */}
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white px-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white px-4">
             Cremação com respeito e transparência
           </h2>
 
           {/* Description */}
-          <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-2xl mx-auto px-4">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white/90 leading-relaxed max-w-2xl mx-auto px-4">
             O processo de cremação é conduzido com máximo respeito e dignidade.
             Nossa equipe especializada garante transparência em cada etapa,
             oferecendo às famílias a tranquilidade e o acolhimento necessários.
@@ -49,10 +49,10 @@ const Cremation = () => {
               <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-3 sm:mb-4 mx-auto">
                 <FileText className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
               </div>
-              <h3 className="text-base sm:text-lg font-semibold text-foreground mb-2">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-foreground mb-2">
                 Processo Transparente
               </h3>
-              <p className="text-xs sm:text-sm text-muted-foreground">
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground">
                 Acompanhamento completo de todas as etapas com total clareza
               </p>
             </motion.div>
@@ -67,10 +67,10 @@ const Cremation = () => {
               <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-3 sm:mb-4 mx-auto">
                 <Flame className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
               </div>
-              <h3 className="text-base sm:text-lg font-semibold text-foreground mb-2">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-foreground mb-2">
                 Equipamentos Modernos
               </h3>
-              <p className="text-xs sm:text-sm text-muted-foreground">
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground">
                 Tecnologia de ponta para um processo seguro e eficiente
               </p>
             </motion.div>
@@ -85,10 +85,10 @@ const Cremation = () => {
               <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-3 sm:mb-4 mx-auto">
                 <DollarSign className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
               </div>
-              <h3 className="text-base sm:text-lg font-semibold text-foreground mb-2">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-foreground mb-2">
                 Planos Acessíveis
               </h3>
-              <p className="text-xs sm:text-sm text-muted-foreground">
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground">
                 Diversas opções que se adequam às necessidades das famílias
               </p>
             </motion.div>

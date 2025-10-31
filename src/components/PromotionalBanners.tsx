@@ -85,35 +85,35 @@ const PromotionalBanners = () => {
             >
               <Card className="h-full hover:shadow-lg transition-shadow flex flex-col">
                 <CardHeader className="p-4 sm:p-6">
-                  <CardTitle className="flex items-start sm:items-center gap-2 text-base sm:text-lg md:text-xl flex-col sm:flex-row">
+                  <CardTitle className="flex items-start sm:items-center gap-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl flex-col sm:flex-row">
                     <div className="flex-shrink-0">
                       {plan.icon === "emerald" ? (
-                        <Gem className="w-6 h-6 sm:w-8 sm:h-8 text-green-500" />
+                        <Gem className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-green-500" />
                       ) : plan.icon === "diamond" ? (
-                        <Gem className="w-6 h-6 sm:w-8 sm:h-8 text-blue-500" />
+                        <Gem className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-blue-500" />
                       ) : (
-                        <span className="text-2xl sm:text-3xl">{plan.icon}</span>
+                        <span className="text-3xl sm:text-4xl md:text-5xl">{plan.icon}</span>
                       )}
                     </div>
                     <span className="font-display text-left">{plan.title}</span>
                   </CardTitle>
-                  <CardDescription className="text-base sm:text-lg font-semibold text-primary mt-2">
+                  <CardDescription className="text-xl sm:text-2xl md:text-3xl font-semibold text-primary mt-2">
                     💰 Apenas {plan.price} por mês
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow flex flex-col p-4 sm:p-6">
-                  <h3 className="text-sm sm:text-base font-semibold mb-2 sm:mb-3 text-foreground">Benefícios</h3>
-                  <ul className="space-y-1.5 sm:space-y-2 mb-4 sm:mb-6 flex-grow">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3 text-foreground">Benefícios</h3>
+                  <ul className="space-y-2 sm:space-y-3 mb-4 sm:mb-6 flex-grow">
                     {plan.benefits.map((benefit, benefitIndex) => (
-                      <li key={benefitIndex} className="text-xs sm:text-sm text-muted-foreground flex items-start">
-                        <span className="mr-2 text-primary flex-shrink-0">•</span>
+                      <li key={benefitIndex} className="text-base sm:text-lg md:text-xl text-muted-foreground flex items-start">
+                        <span className="mr-2 text-primary flex-shrink-0 text-lg sm:text-xl">•</span>
                         <span>{benefit}</span>
                       </li>
                     ))}
                   </ul>
                   <Button 
                     onClick={() => handleWhatsAppClick(plan.title)}
-                    className="w-full bg-green-600 hover:bg-green-700 text-white mt-auto text-sm sm:text-base py-2 sm:py-3"
+                    className="w-full bg-green-600 hover:bg-green-700 text-white mt-auto text-lg sm:text-xl md:text-2xl py-3 sm:py-4 md:py-5"
                   >
                     Contratar via WhatsApp
                   </Button>

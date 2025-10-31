@@ -73,10 +73,10 @@ const Services = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-8 sm:mb-10 md:mb-12 lg:mb-16"
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-3 sm:mb-4 md:mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 sm:mb-4 md:mb-6">
             Serviços Completos
           </h2>
-          <p className="text-sm sm:text-base md:text-lg text-muted-foreground px-4">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground px-4">
             Estrutura moderna e acolhedora para atender todas as suas necessidades
             com dignidade e respeito.
           </p>
@@ -106,16 +106,16 @@ const Services = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: index * 0.05 }}
                     whileHover={{ y: -5, transition: { duration: 0.2 } }}
-                    className="group relative bg-card p-4 sm:p-5 rounded-lg border border-border hover:border-secondary/50 transition-all duration-300 hover:shadow-lg h-full"
+                    className="group relative bg-card p-5 sm:p-6 md:p-8 rounded-lg border border-border hover:border-secondary/50 transition-all duration-300 hover:shadow-lg h-full"
                   >
-                    <div className="flex flex-col items-center text-center space-y-2 sm:space-y-3">
-                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-secondary/10 rounded-full flex items-center justify-center group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
-                        <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-secondary group-hover:text-secondary-foreground transition-colors duration-300" />
+                    <div className="flex flex-col items-center text-center space-y-3 sm:space-y-4">
+                      <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-secondary/10 rounded-full flex items-center justify-center group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
+                        <Icon className="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 text-secondary group-hover:text-secondary-foreground transition-colors duration-300" />
                       </div>
-                      <h3 className="text-sm sm:text-base font-semibold text-foreground">
+                      <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-foreground">
                         {service.name}
                       </h3>
-                      <p className="text-xs text-muted-foreground leading-relaxed">
+                      <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
                         {service.description}
                       </p>
                     </div>

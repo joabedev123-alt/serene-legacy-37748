@@ -25,7 +25,7 @@ const Header = () => {
   };
 
   const whatsappNumber = "5527999781195";
-  const whatsappMessage = encodeURIComponent("Olá! Gostaria de mais informações sobre os serviços da Funerária D.C.");
+  const whatsappMessage = encodeURIComponent("Olá! Gostaria de mais informações sobre os serviços da Funerária Descanso Em Cristo");
 
   return (
     <header
@@ -41,41 +41,41 @@ const Header = () => {
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="flex items-center cursor-pointer"
+            className="flex items-center cursor-pointer -my-2"
             onClick={() => scrollToSection("home")}
           >
-            <img src={logoDC} alt="Funerária D.C." className="h-20" />
+            <img src={logoDC} alt="Funerária Descanso Em Cristo" className="h-20 sm:h-24 md:h-32 lg:h-40 object-contain" />
           </motion.div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-2">
             <button
               onClick={() => scrollToSection("home")}
-              className="text-sm font-medium text-foreground hover:text-secondary transition-colors"
+              className="text-base font-medium text-foreground hover:text-secondary transition-colors"
             >
               Início
             </button>
             <button
               onClick={() => scrollToSection("cremacao")}
-              className="text-sm font-medium text-foreground hover:text-secondary transition-colors"
+              className="text-base font-medium text-foreground hover:text-secondary transition-colors"
             >
               Cremação
             </button>
             <button
               onClick={() => scrollToSection("grupo")}
-              className="text-sm font-medium text-foreground hover:text-secondary transition-colors"
+              className="text-base font-medium text-foreground hover:text-secondary transition-colors"
             >
               Grupo
             </button>
             <button
               onClick={() => scrollToSection("faq")}
-              className="text-sm font-medium text-foreground hover:text-secondary transition-colors"
+              className="text-base font-medium text-foreground hover:text-secondary transition-colors"
             >
               FAQ
             </button>
             <button
               onClick={() => scrollToSection("contato")}
-              className="text-sm font-medium text-foreground hover:text-secondary transition-colors"
+              className="text-base font-medium text-foreground hover:text-secondary transition-colors"
             >
               Contato
             </button>
@@ -115,31 +115,31 @@ const Header = () => {
             <nav className="flex flex-col gap-2">
               <button
                 onClick={() => scrollToSection("home")}
-                className="text-sm font-medium text-foreground hover:text-secondary transition-colors text-left"
+                className="text-base font-medium text-foreground hover:text-secondary transition-colors text-left"
               >
                 Início
               </button>
               <button
                 onClick={() => scrollToSection("cremacao")}
-                className="text-sm font-medium text-foreground hover:text-secondary transition-colors text-left"
+                className="text-base font-medium text-foreground hover:text-secondary transition-colors text-left"
               >
                 Cremação
               </button>
               <button
                 onClick={() => scrollToSection("grupo")}
-                className="text-sm font-medium text-foreground hover:text-secondary transition-colors text-left"
+                className="text-base font-medium text-foreground hover:text-secondary transition-colors text-left"
               >
                 Grupo
               </button>
               <button
                 onClick={() => scrollToSection("faq")}
-                className="text-sm font-medium text-foreground hover:text-secondary transition-colors text-left"
+                className="text-base font-medium text-foreground hover:text-secondary transition-colors text-left"
               >
                 FAQ
               </button>
               <button
                 onClick={() => scrollToSection("contato")}
-                className="text-sm font-medium text-foreground hover:text-secondary transition-colors text-left"
+                className="text-base font-medium text-foreground hover:text-secondary transition-colors text-left"
               >
                 Contato
               </button>

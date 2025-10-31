@@ -39,13 +39,13 @@ const About = () => {
         }} transition={{
           duration: 0.8
         }} className="space-y-4 sm:space-y-6">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-tight">
               Mais que um serviço, um amparo com respeito e serenidade
             </h2>
-            <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed">
-              A Funerária D.C. é mais do que um local de despedida — é um espaço dedicado a acolher famílias com empatia, cuidado e dignidade. Nossa missão é oferecer tranquilidade nos momentos mais sensíveis, com uma estrutura moderna e uma equipe preparada para atender com excelência.
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white/90 leading-relaxed">
+              A Funerária Descanso Em Cristo é mais do que um local de despedida — é um espaço dedicado a acolher famílias com empatia, cuidado e dignidade. Nossa missão é oferecer tranquilidade nos momentos mais sensíveis, com uma estrutura moderna e uma equipe preparada para atender com excelência.
             </p>
-            <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white/90 leading-relaxed">
               Unimos tradição e tecnologia para garantir um atendimento humano, ágil e respeitoso, cuidando de cada detalhe com sensibilidade e profissionalismo.
             </p>
 

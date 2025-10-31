@@ -58,10 +58,10 @@ const FAQ = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-8 sm:mb-12 md:mb-16"
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4 sm:mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-4 sm:mb-6">
             Perguntas Frequentes
           </h2>
-          <p className="text-sm sm:text-base md:text-lg text-muted-foreground px-4">
+          <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-muted-foreground px-4">
             Esclarecemos suas dúvidas sobre nossos serviços e processos.
           </p>
         </motion.div>
@@ -81,12 +81,12 @@ const FAQ = () => {
                 className="bg-card border border-border rounded-lg px-4 sm:px-6"
               >
                 <AccordionTrigger className="text-left hover:no-underline py-4">
-                  <span className="text-sm sm:text-base md:text-lg font-semibold text-foreground pr-4">
+                  <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-foreground pr-4">
                     {faq.question}
                   </span>
                 </AccordionTrigger>
                 <AccordionContent>
-                  <p className="text-xs sm:text-sm md:text-base text-muted-foreground leading-relaxed pt-2 pb-2">
+                  <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed pt-2 pb-2">
                     {faq.answer}
                   </p>
                 </AccordionContent>
@@ -101,12 +101,12 @@ const FAQ = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="mt-8 sm:mt-10 md:mt-12 text-center"
           >
-            <p className="text-base sm:text-lg text-muted-foreground mb-4 sm:mb-6 px-4">
+            <p className="text-lg sm:text-xl text-muted-foreground mb-4 sm:mb-6 px-4">
               Ainda tem dúvidas?
             </p>
             <Button
               onClick={handleWhatsAppContact}
-              className="bg-whatsapp hover:bg-whatsapp/90 text-whatsapp-foreground text-sm sm:text-base"
+              className="bg-whatsapp hover:bg-whatsapp/90 text-whatsapp-foreground text-base sm:text-lg"
             >
               <MessageCircle className="w-4 h-4 mr-2" />
               Converse conosco
