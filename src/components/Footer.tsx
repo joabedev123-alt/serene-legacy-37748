@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, Instagram } from "lucide-react";
 import logoDC from "@/assets/logo-dc.png";
 
 const Footer = () => {
@@ -33,6 +33,15 @@ const Footer = () => {
               >
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 flex-shrink-0" />
                 <span>(27) 99788-7399</span>
+              </a>
+              <a
+                href="https://www.instagram.com/marcelogomes4261?igsh=MXF5bWE4Z3FsdHppNg%3D%3D&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 sm:gap-3 text-base sm:text-lg md:text-xl text-primary-foreground/80 hover:text-primary-foreground transition-colors justify-center sm:justify-start"
+              >
+                <Instagram className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 flex-shrink-0" />
+                <span>Instagram</span>
               </a>
             </div>
             <div className="rounded overflow-hidden border border-primary-foreground/20 h-[100px] sm:h-[120px] mt-3 sm:mt-4">
